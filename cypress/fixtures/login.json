@@ -1,0 +1,7 @@
+{
+    "SignInMain" : ".login",
+    "EmailField" : "#email",
+    "PasswordField" : "#passwd",
+    "SignInForm" : "#SubmitLogin > span",
+    "WrongSignInAlert" : "ol > li"
+}
