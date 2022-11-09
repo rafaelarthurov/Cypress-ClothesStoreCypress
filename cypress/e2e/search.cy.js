@@ -20,4 +20,15 @@ describe('Search elements', ()=>{
         })
     })
 
+    //Reading a txt and send like a parameter
+    it('TC5 - Send a txt file like text', ()=>{
+        cy.readFile('cypress/support/text/search.txt').then((text)=>{
+            cy.search(text)
+
+        })
+        cy.fixture('searchResult').then((searchResult)=>{
+            cy.get(searchResult.alert).should('contain', 'No results were found for your search')
+        })
+    })
+
 })
